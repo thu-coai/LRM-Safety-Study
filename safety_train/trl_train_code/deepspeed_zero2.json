@@ -1,0 +1,23 @@
+{
+    "zero_optimization": {
+        "stage": 2,
+        "contiguous_gradients": true,
+        "overlap_comm": true,
+        "reduce_scatter": true,
+        "reduce_bucket_size": 5e8,
+        "allgather_bucket_size": 5e8
+    },
+    "activation_checkpointing": {
+        "partition_activations": true,
+        "cpu_checkpointing": true,
+        "contiguous_memory_optimization": true,
+        "number_checkpoints": null,
+        "synchronize_checkpoint_boundary": false,
+        "profile": false
+    },
+    "gradient_accumulation_steps": "auto",
+    "steps_per_print": 1000000,
+    "train_batch_size": "auto",
+    "train_micro_batch_size_per_gpu": "auto",
+    "wall_clock_breakdown": false
+}

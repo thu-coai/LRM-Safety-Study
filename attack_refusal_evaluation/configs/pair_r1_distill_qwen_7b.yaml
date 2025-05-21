@@ -1,0 +1,26 @@
+data_path: ./data/advbench/advbenchsub.jsonl
+data_offset: 0
+attack_model_name: 'openai'
+attack_model_path: 'mistralai/mixtral-8x7b-instruct'
+target_model_name: 'qwen'
+target_model_path: 'deepseek-ai/DeepSeek-R1-Distill-Qwen-7B'
+target_system_prompt: null
+eval_model_name: 'openai'
+eval_model_path: 'gpt-4o-mini'
+openai_key: 
+openai_url: 
+attack_max_n_tokens: 500
+max_n_attack_attempts: 3
+attack_temperature: 1
+attack_top_p: 0.9
+target_max_n_tokens: 1536
+target_temperature: 1.0
+target_top_p: 0
+judge_max_n_tokens: 150
+judge_temperature: 1
+n_streams: 5
+keep_last_n: 3
+n_iterations: 5
+devices: 'cuda:0'
+res_save_path: 'results/r1_distill_qwen_7b-pair_advbenchsub.jsonl'
+delete_existing_res: false

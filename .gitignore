@@ -1,0 +1,4 @@
+logs/*
+score_results/*
+__pycache__/
+.DS_Store
