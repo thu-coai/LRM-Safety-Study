@@ -2,6 +2,8 @@
 
 This repository contains the code, dataset and instructions for the training and evaluation used in the work [How Should We Enhance the Safety of Large Reasoning Models: An Empirical Study](https://arxiv.org/abs/2505.15404).
 
+
+## Table of Contents <!-- omit from toc -->
 - [Environment](#environment)
 - [Codebase Directory](#codebase-directory)
 - [Training Dataset Preparing](#training-dataset-preparing)
@@ -16,7 +18,7 @@ This repository contains the code, dataset and instructions for the training and
     - [3. XSTest Evaluation](#3-xstest-evaluation)
 - [Reasoning Performance Evaluation](#reasoning-performance-evaluation)
   - [1. MATH-500 and AIME 2024](#1-math-500-and-aime-2024)
-    - [2. LiveCodeBench](#2-livecodebench)
+  - [2. LiveCodeBench](#2-livecodebench)
 
 
 ## Environment
@@ -125,7 +127,7 @@ cd reasoning_evaluation
 bash eval_math.sh
 ```
 
-#### 2. LiveCodeBench
+### 2. LiveCodeBench
 To evaluate on LiveCodeBench:
 1. clone the dataset repository into the target directory:
 ```
