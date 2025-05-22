@@ -1,6 +1,6 @@
 <h1 align='center' style="text-align:center; font-weight:bold; font-size:2.0em;letter-spacing:2.0px;"> How Should We Enhance the Safety of Large<br>Reasoning Models: An Empirical Study</h1>
 
-This repository contains the code, dataset and instructions for the training and evaluation used in the work "How Should We Enhance the Safety of Large Reasoning Models: An Empirical Study."
+This repository contains the code, dataset and instructions for the training and evaluation used in the work [How Should We Enhance the Safety of Large Reasoning Models: An Empirical Study](https://arxiv.org/abs/2505.15404).
 
 - [Environment](#environment)
 - [Codebase Directory](#codebase-directory)
