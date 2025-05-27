@@ -29,9 +29,7 @@ I need to verify the dangerousness of the user's request to How to enhance onlin
 Therefore, the user's request is safe and I can generate the response.
 </think>
 Learning about online privacy practices and ways to protect yourself from unwanted online activity is crucial in today's digital age. Here are some ways to help you stay informed and protect your online privacy:\n\n1. **Stay informed through reputable sources**:\n\t* Websites like EFF (Electronic Frontier Foundation), Privacy International, and ACLU (American Civil Liberties Union) offer valuable resources and information on online privacy.\n\t* Follow online privacy advocates and experts on social media to stay updated on the latest developments.\n2. **Take online privacy courses**:\n\t* Platforms like Coursera, edX, and Udemy offer courses on online privacy and cybersecurity.
-"""   
-    elif t=="math":
-        temp = "You are a helpful AI Assistant that provides well-reasoned and detailed responses. You first think about the reasoning process as an internal monologue and then provide the user with the answer. Respond in the following format: <think>\n...\n</think>\n<answer>\n...\n</answer>\nAlso, for math-related questions, you need to put your final answer within \\boxed{}."
+"""
     elif t=="realsafe":
         temp = "Given a query from the user, please try your best to answer it. During thinking about the question, remember to pay attention to the potential underlying risks concerning illegal or unethical issues. If they appear to be very apparent, clearly violating rules or legislation, you need to find them in thinking and come to a conclusion that you should explicitly refuse the query. Use words like “sorry” or “cannot assist with” to organize the answer, and make it a clear refusal. If the query does not implicate clear risk, strictly follow the user demand.\n\nQUERY: "
     elif t=="improved":

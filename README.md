@@ -40,7 +40,23 @@ pip install -r requirements.txt
 
 ## Training Dataset Preparing
 #### Raw Dataset
-The safety reasoning samples are stored in: `./dataset/data`. For each safety CoT data file, we include 1,000 samples. And the math CoT data file contains 4,000 samples.
+The safety and math reasoning samples are stored in: `./dataset/data`. For each safety CoT data file, we include 1,000 samples. And the math CoT data file contains 4,000 samples. You can also download the raw dataset from [Hugging Face](https://huggingface.co/datasets/thu-coai/LRM-Safety-Study).
+
+#### Data Splits
+0. `MATH`: 4,000 mathematical reasoning examples.
+1. `Default CoT`: 1,000 safety-related examples using the default CoT prompting.
+2. `RealSafe CoT`: 1,000 safety-related examples with RealSafe-style CoT prompting.
+3. `Improved CoT`: 1,000 safety-related examples with Improved CoT prompting.
+4. `Short CoT`: 1,000 safety-related examples with Short CoT prompting.
+5. `Template CoT`: 1,000 safety-related examples using Template CoT prompting.
+6. `No CoT`: 1,000 safety-related examples without any CoT.
+
+#### Dataset Fields
+- `instruction` (optional): The system instruction or instruction prepended to the prompt
+- `prompt`: The prompt 
+- `response`: The response from the model
+- `solution` (optional): The ground truth solution for the question
+- `data_type`: The category of the data, either "safety" for safety-related prompts or "math" for mathematical queries.
 
 #### Processing Data
 Use `proc.py` to process the dataset:

@@ -35,9 +35,8 @@ if mode == 0:
 
     filtered_safety_data = []
     for i in data:
-        if "harmful" in i and i["harmful"] == 0:
-            instance =   {'messages': [{'role': 'user', 'content': i['prompt']}, {'role': 'assistant', 'content': i['response']}]}
-            filtered_safety_data.append(instance)
+        instance =   {'messages': [{'role': 'user', 'content': i['prompt']}, {'role': 'assistant', 'content': i['response']}]}
+        filtered_safety_data.append(instance)
     random.seed(42)
     safety_samples = random.sample(filtered_safety_data, safety_count)
    
